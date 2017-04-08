@@ -50,6 +50,9 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
+# Display battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
 if [[ "$RUN_AS_ROOT" = true ]]; then
